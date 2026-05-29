@@ -1,0 +1,315 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background:
+      radial-gradient(circle at top left, rgba(108, 130, 78, 0.18), transparent 35%),
+      linear-gradient(135deg, #070b08, #111811 45%, #080c09);
+   font-family: "Consolas", "Courier New", sans-serif;
+   color: #b8c2a8;
+   line-height: 1.6;
+}
+
+/* Main Layout */
+
+.main-container {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 350px 1fr;
+    gap: 50px;
+    padding-top: 40px;
+    margin: auto;
+}
+
+/* Sidebar */
+
+.sidebar {
+    position: sticky;
+    top: 40px;
+    height: 90vh;
+    background:
+      linear-gradient(145deg, rgba(24, 34, 24, 0.95), rgba(12, 18, 13, 0.95));
+    border: 1px solid #3f4d32;
+    border-radius: 6px;
+    padding: 40px;
+    box-shadow:
+      inset 0 0 25px rgba(0, 0, 0, 0.55),
+      0 0 20px rgba(96, 120, 62, 0.15);
+}
+
+.main-content {
+    background:
+      linear-gradient(145deg, rgba(25, 35, 25, 0.95), rgba(12, 18, 13, 0.98));
+    border: 1px solid #3f4d32;
+    border-radius: 6px;
+    padding: 40px;
+    box-shadow:
+      inset 0 0 30px rgba(0, 0, 0, 0.45),
+      0 0 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Profile section */
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 2px solid #9ca85f;
+    box-shadow: 0 0 18px rgba(156, 168, 95, 0.35);
+    filter: contrast(1.08) saturate(0.85);
+}
+
+.profile h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #d8dfc2;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.profile p {
+    background-color: #10170f;
+    padding: 5px 15px;
+    color: #d6b04a;
+    border: 1px solid #6c783e;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: inset 0 0 10px rgba(214, 176, 74, 0.08);
+}
+
+/* Contact Information */
+
+.contact {
+    margin-top: 30px;
+    border-top: 2px solid #34402d;
+    padding-top: 20px;
+}
+
+.label {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #7f8c6f;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.value {
+    color: #d8dfc2;
+    text-decoration: none;
+}
+
+.value:hover {
+    color: #d6b04a;
+}
+
+.email,
+.phone {
+    margin-bottom: 0px;
+}
+
+/* Social Media */
+
+.social {
+    margin-top: 30px;
+    border-top: 2px solid #34402d;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.social a {
+    text-decoration: none;
+}
+
+.social svg {
+    height: 24px;
+    width: 24px;
+    margin-left: 5px;
+    filter: grayscale(1) sepia(0.4) hue-rotate(35deg) brightness(0.85);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.social a:hover svg {
+    filter: grayscale(0) sepia(1) hue-rotate(20deg) saturate(2) brightness(1.2);
+    transform: translateY(-3px);
+}
+
+/* Main Content */
+
+/* Navigation */
+
+#navigation {
+     border-bottom: 2px solid #34402d;
+     margin-bottom: 20px;
+     padding-bottom: 20px;
+}
+
+nav {
+   display: flex;
+   justify-content: flex-end;
+   gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #9aa58b;
+    font-weight: 600;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+.active,
+nav a:hover {
+  color: #d6b04a;
+  text-shadow: 0 0 10px rgba(214, 176, 74, 0.45);
+}
+
+/* About Me */
+
+.heading {
+    color: #d8dfc2;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.line {
+    width: 70px;
+    height: 4px;
+    background: linear-gradient(90deg, #d6b04a, #6c783e);
+    margin-bottom: 15px;
+    box-shadow: 0 0 12px rgba(214, 176, 74, 0.45);
+}
+
+.content {
+    text-align: justify;
+    color: #b8c2a8;
+}
+
+#about {
+    margin-bottom: 40px;
+}
+
+/* Skills Section */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+}
+
+.item {
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #3f4d32;
+    background:
+      linear-gradient(145deg, #10170f, #182217);
+    text-align: center;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.35);
+}
+
+.item h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #d8dfc2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.item svg {
+    height: 48px;
+    width: 48px;
+    filter: invert(70%) sepia(40%) saturate(900%)
+             hue-rotate(15deg) brightness(105%) contrast(95%);
+    margin-bottom: 15px;
+}
+
+.item:hover {
+    transform: scale(1.08);
+    border: 1px solid #d6b04a;
+    box-shadow:
+      0px 0px 18px 4px rgba(214, 176, 74, 0.18),
+      inset 0 0 18px rgba(214, 176, 74, 0.06);
+}
+
+/* Education */
+
+#education {
+    margin-top: 30px;
+}
+
+.edtech {
+    position: relative;
+}
+
+.year {
+    font-size: 0.9rem;
+    color: #8f9b7d;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.degree {
+    color: #d8dfc2;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.college {
+    font-style: italic;
+    color: #aab599;
+    margin-bottom: 10px;
+}
+
+.work {
+   color: #b8c2a8;
+}
+
+.edfirst,
+.edsecond,
+.edthird {
+    margin-bottom: 30px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.goal {
+    height: 15px;
+    width: 15px;
+    border: 3px solid #d6b04a;
+    background-color: #10170f;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    z-index: 10;
+    box-shadow: 0 0 12px rgba(214, 176, 74, 0.55);
+}
+
+.liner {
+    position: absolute;
+    width: 5px;
+    top: 5px;
+    left: 5px;
+    bottom: 0px;
+    border: 2px solid #34402d;
+}
