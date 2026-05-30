@@ -339,13 +339,13 @@ nav a {
     border-radius: 7px;
 }
 
-nav a:hover,
+/* nav a:hover,
 .active {
     color: var(--green);
     border-color: rgba(80, 255, 130, 0.35);
     background: rgba(80, 255, 130, 0.06);
     text-shadow: 0 0 12px rgba(80, 255, 130, 0.55);
-}
+} */
 
 /* Section Heading */
 

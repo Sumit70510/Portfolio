@@ -1,0 +1,491 @@
+*{
+    padding : 0;
+    margin  : 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-color: #1e1e1e;
+   font-family: sans-serif;
+   color : #a0a0a0;
+   line-height: 1.6;  
+}
+
+.main-container{
+    display : grid;
+    max-width : 1200px;
+    grid-template-columns: 350px 1fr; 
+    gap : 50px;
+    padding-top: 40px;
+    margin : auto;        
+}
+
+.sidebar{
+    position: sticky;
+    top : 40px;
+    height : 90vh;
+    background-color: #2a2a2a;
+    border : 1px solid #3a3a3a;
+    border-radius : 16px;
+    padding :40px;
+   
+}
+.main-content{
+    /* height : 90vh; */
+    background-color: #2a2a2a;
+    border : 1px solid #3a3a3a;
+    border-radius : 16px;
+    padding : 40px;
+    position: sticky;
+    top:40px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Profile selection */
+
+.profile{
+    text-align : center;
+}
+
+.profile img
+ {
+    height : 120px;
+    width  : 120px; 
+    border-radius: 50%;
+    border : 1px solid #3a3a3a; 
+ }
+ 
+ .profile h2{
+    font-size : 1.5rem; 
+     /*rem = multiple of root element*/
+    font-weight : 700;
+    margin-top : 20px;
+    color : #e0e0e0;
+ } 
+ 
+ .profile p{
+      background-color : #1e1e1e;
+      padding : 5px 15px;
+      color : #FFBF00;
+      border : 1px solid #3a3a3a;
+      font-size : 0.8rem;
+      border-radius : 8px;
+      display : inline-block;
+      margin-top : 10px;
+      text-align : center;
+ }
+ 
+ .resume-btn{
+     display : inline-block;
+     margin-top : 10px;
+     padding : 5px 15px;
+     background-color : #FFBF00;
+     color : #1e1e1e;
+     border : 1px solid #3a3a3a;
+     border-radius : 8px;
+     text-decoration: none;
+     font-weight : 600;
+     font-size : 0.8rem;
+     transition : all 0.3s ease;
+    }
+
+.resume-btn:hover{
+    background-color : transparent;
+    color : #FFBF00;
+    background-color : #1e1e1e;
+}
+ 
+ 
+ /* Contact Information */
+ 
+ .contact{
+    margin-top :30px;
+    border-top: 2px solid #3a3a3a;
+    padding-top : 20px;     
+ }
+ 
+ .label{
+    font-weight : 500;
+    font-size : 0.8rem;
+    color:#a0a0a0;
+ }
+ 
+ .value{
+    color : #e0e0e0;
+    text-decoration: none;
+    word-break: break-word;
+ }
+ 
+ .email, .phone{
+    margin-bottom: 0px;
+ }
+ 
+ /* Social Media */
+ 
+ .social{
+    margin-top :30px;
+    border-top: 2px solid #3a3a3a;
+    padding-top : 20px; 
+    text-align :center;    
+ }
+ 
+ .social a{
+     text-decoration: none;
+ }
+ 
+ .social svg{
+    height : 24px;
+    width : 24px;
+    margin-left : 5px;
+    filter : grayscale(1) invert(0.7);
+    transition : filter 0.3s ease;
+ }
+ 
+ .social a:hover svg {
+  filter: grayscale(0) ;
+}
+
+/* main content */
+
+/* Navigation */
+
+#navigation{
+     /* padding : 30px 40px; */
+     border-bottom  : 2px solid #3a3a3a;
+     margin-bottom  : 20px;
+     padding-bottom : 20px;
+     flex-shrink: 0;
+     /* this is temperary */
+     /* position: sticky;
+     top : 40px;
+     z-index: 10; */
+}
+
+nav{
+   display: flex;
+   justify-content: flex-end;
+   gap : 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color : #a0a0a0;
+    font-weight: 500; 
+    transition: color 0.3s ease;
+    
+}
+
+.active , nav a:hover{
+  color : #FFBF00;  
+}
+
+.scroll-content{
+    overflow-y : auto;
+    padding-right : 8px;
+    scroll-behavior : smooth;
+}
+
+.scroll-content::-webkit-scrollbar{
+    width : 6px;
+}
+
+.scroll-content::-webkit-scrollbar-track{
+    background : #1e1e1e;
+    border-radius : 10px;
+}
+
+.scroll-content::-webkit-scrollbar-thumb{
+    background : #3a3a3a;
+    border-radius : 10px;
+}
+
+.scroll-content::-webkit-scrollbar-thumb:hover{
+    background : #ffbf00;
+}
+
+/* About Me */
+
+.heading{
+    color : #e0e0e0;
+    font-size : 2rem;
+    margin-bottom: 15px;
+}
+
+.line{
+    width : 60px;
+    height : 5px;
+    background-color: #ffbf00;
+    margin-bottom: 15px;
+}
+
+.content{
+    text-align: justify;
+    color : #a0a0a0;
+}
+
+#about{
+    margin-bottom: 40px;
+}
+
+/* skills section */
+.grid-container{
+    display : grid;
+    grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+    gap : 30px;
+}
+
+.item{
+    padding :20px;
+    border-radius : 10px;
+    border : 2px solid #3a3a3a;
+    background-color: #1e1e1e;
+    text-align: center;
+    margin-top : 20px;
+    transition: transform 0.3s ease , box-shadow 0.3s ease;
+}
+
+.item h3{
+    font-size : 1rem;
+    font-weight : 500;    
+}
+
+.item svg{
+    height : 48px;
+    width :  48px;
+    filter : invert(75%) sepia(50%) saturate(1000%)
+             hue-rotate(350deg) brightness(110%) contrast(101%);
+    margin-bottom : 15px;
+}
+
+.item:hover{
+    transform : scale(1.1);
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
+}
+
+/* Education */
+#education{
+    margin-top: 30px;
+}
+
+.edtech{
+    /* padding-left : 20px; */
+    /* for the line */
+    position: relative;
+    margin-top:20px;
+ }
+
+.year{
+    font-size : 0.9rem;
+    color : #a0a0a0;
+    margin-bottom : 5px;
+}
+
+.degree{
+    color : #e0e0e0;
+    font-size : 1.2rem;
+    font-weight : 500;
+    margin-bottom : 5px;
+}
+
+.college{
+    font-style : italic;
+    color : #a0a0a0;
+    margin-bottom : 10px;
+}
+
+.work{
+   color : #a0a0a0; 
+}
+
+.edfirst, .edsecond, .edthird{
+    margin-bottom: 30px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.goal{
+    height : 15px;
+    width : 15px;
+    /* background-color: #FFBF00; */
+    border : 3px solid #ffbf00;
+    border-radius: 50%;
+    position : absolute;
+    top : 5px;
+    left : 0px;
+    z-index: 10;
+}
+
+.liner{
+    position: absolute;
+    width: 5px;
+    top:5px;
+    left:5px;
+    bottom: 0px;
+    border : 2px solid #3a3a3a;
+}
+
+/* Portfolio */
+.project-container{
+    display : grid;
+    grid-template-columns: 1fr 1fr;
+    gap : 25px;
+}
+
+.project
+ {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    border : 1px solid #3a3a3a;
+    overflow: hidden; 
+    transition : transform 0.5s ease, box-shadow 0.5s ease;
+ }
+ 
+.project:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
+} 
+
+.project img{
+    height : 180px;
+    width : 100%;
+    border-radius: 1px;
+    /* object-fit: cover; */
+}
+
+.card
+{
+   padding : 20px; 
+}
+
+.card h3{
+    color : #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.card p{
+    color : #a0a0a0;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+.card span{
+   background-color: rgba(255,191,0,0.1);
+   color : #ffbf00;
+   padding : 4px 8px;
+   border-radius : 5px;
+   font-size: 0.75rem;
+   margin-right: 5px;
+   margin-bottom: 7px;
+   display: inline-block;
+}
+
+
+@media screen and (max-width:1200px){
+    .main-container{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .sidebar{
+        position: static;
+        height: auto;
+    }
+
+    .main-content{
+        position: static;
+        height: auto;
+        overflow: visible;
+    }
+
+    .scroll-content{
+        overflow: visible;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width:750px) {
+    
+    .main-container{
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .sidebar,
+    .main-content{
+        padding: 25px;
+        border-radius: 14px;
+    }
+    
+    .project-container{
+        grid-template-columns: 1fr;
+    }
+
+    #navigation{
+        overflow-x: auto;
+        padding-bottom: 15px;
+    }
+    
+    #navigation nav {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        min-width: max-content;
+    }
+
+    .sidebar{
+        display: block;
+        text-align: center;
+    }
+
+    .contact{
+        text-align: left;
+    }
+
+    .heading{
+        font-size: 1.6rem;
+    }
+
+    .content{
+        text-align: left;
+    }
+
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .item{
+        padding: 16px 10px;
+    }
+
+    .item:hover{
+        transform : scale(1.03);
+    }
+}
+
+
+@media screen and (max-width:420px) {
+       .grid-container{
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar,
+    .main-content{
+        padding: 20px;
+    }
+
+    .profile img{
+        height: 100px;
+        width: 100px;
+    }
+
+    .profile h2{
+        font-size: 1.3rem;
+    }
+
+    nav{
+        gap: 16px;
+    }
+}
