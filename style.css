@@ -257,9 +257,10 @@ nav a:hover{
 }
 
 .item:hover{
-    transform : scale(1.1);
-    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
+    transform : translateY(-6px);
+    box-shadow : 0px 8px 18px rgba(0,0,0,0.35);
 }
+
 
 /* Education */
 
@@ -560,6 +561,7 @@ nav a:hover{
         align-items: center;
         scrollbar-width : none;
         -ms-overflow-style : none;
+         overflow-x : hidden;
     }
 
     #navigation::-webkit-scrollbar{
