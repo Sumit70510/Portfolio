@@ -717,7 +717,7 @@ nav a:hover{
 
 /* Small mobile view */
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:390px) {
 
     .main-container{
         padding : 8px;
