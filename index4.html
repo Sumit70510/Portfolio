@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07100b">
+  <meta name="description" content="Sumit Kumar - Software Developer portfolio">
+  <title>Sumit Kumar | Software Developer</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="screen-noise" aria-hidden="true"></div>
+  <div class="radar-sweep" aria-hidden="true"></div>
+
+  <main class="igi-shell">
+    <aside class="operative-panel" aria-label="Profile and contact information">
+      <div class="panel-label">OPERATIVE DOSSIER</div>
+
+      <div class="profile-frame">
+        <img
+          src="https://res.cloudinary.com/dcmxn04vi/image/upload/v1780159699/Profile_Photo2_lpzava.jpg"
+          alt="Sumit Kumar profile photo"
+        >
+        <span class="target-corner target-corner--tl"></span>
+        <span class="target-corner target-corner--tr"></span>
+        <span class="target-corner target-corner--bl"></span>
+        <span class="target-corner target-corner--br"></span>
+      </div>
+
+      <div class="identity-block">
+        <p class="eyebrow">FIELD ID // SK-01</p>
+        <h1>SUMIT KUMAR</h1>
+        <p class="role">Software Developer</p>
+      </div>
+
+      <div class="status-strip">
+        <span class="status-dot"></span>
+        <span>AVAILABLE FOR SDE / BACKEND ROLES</span>
+      </div>
+
+      <dl class="intel-list">
+        <div>
+          <dt>BASE</dt>
+          <dd>Gurgaon, Haryana</dd>
+        </div>
+        <div>
+          <dt>EMAIL</dt>
+          <dd><a href="mailto:sumit.verma.70510@gmail.com">sumit.verma.70510@gmail.com</a></dd>
+        </div>
+        <div>
+          <dt>COMMS</dt>
+          <dd><a href="tel:9588509164">9588509164</a></dd>
+        </div>
+      </dl>
+
+      <div class="quick-stats" aria-label="Quick statistics">
+        <div>
+          <strong>1010+</strong>
+          <span>LEETCODE</span>
+        </div>
+        <div>
+          <strong>90+</strong>
+          <span>CONTESTS</span>
+        </div>
+        <div>
+          <strong>03</strong>
+          <span>PROJECTS</span>
+        </div>
+      </div>
+
+      <div class="profile-actions">
+        <a class="tactical-button tactical-button--primary" href="./CV_SDE.pdf" download>
+          <span>DOWNLOAD RESUME</span>
+        </a>
+        <div class="social-links" aria-label="Coding and social profiles">
+          <a href="https://github.com/Sumit70510" target="_blank" rel="noreferrer">GH</a>
+          <a href="https://www.linkedin.com/in/sumit-verma-001752210/" target="_blank" rel="noreferrer">IN</a>
+          <a href="https://leetcode.com/u/PROGrAMmER02/" target="_blank" rel="noreferrer">LC</a>
+          <a href="https://www.geeksforgeeks.org/user/sv3013645/" target="_blank" rel="noreferrer">GFG</a>
+          <a href="https://www.codechef.com/users/sv3013645" target="_blank" rel="noreferrer">CC</a>
+          <a href="https://codeforces.com/profile/sv3013645" target="_blank" rel="noreferrer">CF</a>
+        </div>
+      </div>
+    </aside>
+
+    <section class="command-deck" aria-label="Portfolio command interface">
+      <header class="command-header">
+        <div class="command-title">
+          <p>PROJECT // PORTFOLIO INTERFACE</p>
+          <h2>MISSION CONTROL</h2>
+        </div>
+
+        <div class="telemetry" aria-hidden="true">
+          <span>SYS: ONLINE</span>
+          <span>LINK: SECURE</span>
+          <span id="localClock">00:00:00</span>
+        </div>
+      </header>
+
+      <nav class="mission-selector" aria-label="Portfolio sections">
+        <button class="mission-tab active" type="button" data-panel="about" aria-controls="about" aria-selected="true">
+          <span class="tab-index">01</span>
+          <span>ABOUT</span>
+        </button>
+        <button class="mission-tab" type="button" data-panel="skills" aria-controls="skills" aria-selected="false">
+          <span class="tab-index">02</span>
+          <span>SKILLS</span>
+        </button>
+        <button class="mission-tab" type="button" data-panel="experience" aria-controls="experience" aria-selected="false">
+          <span class="tab-index">03</span>
+          <span>EXPERIENCE</span>
+        </button>
+        <button class="mission-tab" type="button" data-panel="education" aria-controls="education" aria-selected="false">
+          <span class="tab-index">04</span>
+          <span>EDUCATION</span>
+        </button>
+        <button class="mission-tab" type="button" data-panel="projects" aria-controls="projects" aria-selected="false">
+          <span class="tab-index">05</span>
+          <span>PROJECTS</span>
+        </button>
+      </nav>
+
+      <div class="hud-window">
+        <div class="hud-topbar">
+          <div>
+            <span class="hud-kicker">ACTIVE FILE</span>
+            <strong id="activeFileName">OPERATIVE BRIEF</strong>
+          </div>
+          <div class="hud-coordinates" aria-hidden="true">
+            <span>LAT 28.4595</span>
+            <span>LON 77.0266</span>
+          </div>
+        </div>
+
+        <div class="hud-content" id="hudContent">
+          <section class="content-panel active" id="about" data-title="OPERATIVE BRIEF" aria-hidden="false">
+            <div class="section-heading">
+              <p>FILE 01 // PROFILE SUMMARY</p>
+              <h3>ABOUT ME</h3>
+            </div>
+
+            <div class="brief-grid">
+              <div class="brief-copy">
+                <p>
+                  I’m Sumit Kumar, a Computer Science graduate and Software Developer focused on backend and full-stack engineering. I have hands-on experience building MERN applications with Node.js, Express.js, React.js, MongoDB, REST APIs, authentication, and real-time features using Socket.io.
+                </p>
+                <p>
+                  I have solved 1010+ problems on LeetCode and participated in 90+ coding contests, strengthening my foundation in Data Structures, Algorithms, problem solving, and core computer science. I enjoy designing scalable backend systems and building reliable software solutions for real-world applications.
+                </p>
+              </div>
+
+              <div class="mission-card mission-card--focus">
+                <span class="card-label">CURRENT OBJECTIVE</span>
+                <strong>BUILD RELIABLE SOFTWARE</strong>
+                <p>Backend systems, full-stack products, APIs, real-time communication, and scalable application architecture.</p>
+                <div class="signal-bars" aria-hidden="true">
+                  <span></span><span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="metrics-row">
+              <div class="metric"><span>DSA PRACTICE</span><strong>1010+</strong><small>LeetCode problems</small></div>
+              <div class="metric"><span>COMPETITIVE</span><strong>90+</strong><small>Coding contests</small></div>
+              <div class="metric"><span>STACK</span><strong>MERN</strong><small>Full-stack development</small></div>
+            </div>
+          </section>
+
+          <section class="content-panel" id="skills" data-title="TECHNICAL LOADOUT" aria-hidden="true">
+            <div class="section-heading">
+              <p>FILE 02 // TECHNICAL LOADOUT</p>
+              <h3>SKILLS</h3>
+            </div>
+
+            <div class="loadout-grid">
+              <article class="loadout-card"><span class="loadout-code">PY</span><div><strong>Python</strong><small>Programming Language</small></div></article>
+              <article class="loadout-card"><span class="loadout-code">C++</span><div><strong>C++</strong><small>Programming Language</small></div></article>
+              <article class="loadout-card"><span class="loadout-code">JS</span><div><strong>JavaScript</strong><small>Programming Language</small></div></article>
+              <article class="loadout-card"><span class="loadout-code">JAVA</span><div><strong>Java</strong><small>Programming Language</small></div></article>
+              <article class="loadout-card"><span class="loadout-code">NODE</span><div><strong>Node.js</strong><small>Backend Runtime</small></div></article>
+              <article class="loadout-card"><span class="loadout-code">EX</span><div><strong>Express.js</strong><small>Backend Framework</small></div></article>
+              <article class="loadout-card"><span class="loadout-code">RE</span><div><strong>React</strong><small>Frontend Library</small></div></article>
+              <article class="loadout-card"><span class="loadout-code">MDB</span><div><strong>MongoDB</strong><small>Database</small></div></article>
+              <article class="loadout-card"><span class="loadout-code">SQL</span><div><strong>MySQL</strong><small>Database</small></div></article>
+              <article class="loadout-card"><span class="loadout-code">GIT</span><div><strong>Git & GitHub</strong><small>Version Control</small></div></article>
+              <article class="loadout-card"><span class="loadout-code">API</span><div><strong>REST APIs</strong><small>Backend Integration</small></div></article>
+              <article class="loadout-card"><span class="loadout-code">RT</span><div><strong>Socket.io</strong><small>Real-Time Systems</small></div></article>
+            </div>
+          </section>
+
+          <section class="content-panel" id="experience" data-title="FIELD EXPERIENCE" aria-hidden="true">
+            <div class="section-heading">
+              <p>FILE 03 // FIELD EXPERIENCE</p>
+              <h3>EXPERIENCE</h3>
+            </div>
+
+            <article class="record-card">
+              <div class="record-meta">
+                <span>JUNE 2026 - PRESENT</span>
+                <span>REMOTE</span>
+              </div>
+              <h4>Freelance AI Model Trainer & Technical Reviewer</h4>
+              <p class="record-org">Outlier AI (operated by Scale AI)</p>
+              <p>
+                Contribute as a freelance AI model trainer and technical reviewer, evaluating AI-generated responses against defined requirements, ground-truth answers, and quality rubrics. Review technical reasoning, correctness, consistency, edge cases, and failure patterns, and provide structured feedback to improve model quality, evaluation accuracy, and benchmark reliability.
+              </p>
+
+              <div class="keyword-strip" aria-label="Experience keywords">
+                <span>AI MODEL EVALUATION</span>
+                <span>TECHNICAL REVIEW</span>
+                <span>QUALITY ASSURANCE</span>
+                <span>FAILURE ANALYSIS</span>
+                <span>BENCHMARKING</span>
+              </div>
+            </article>
+          </section>
+
+          <section class="content-panel" id="education" data-title="TRAINING RECORD" aria-hidden="true">
+            <div class="section-heading">
+              <p>FILE 04 // TRAINING RECORD</p>
+              <h3>EDUCATION</h3>
+            </div>
+
+            <div class="timeline">
+              <article class="timeline-item">
+                <span class="timeline-year">2020 - 2024</span>
+                <h4>Bachelor of Technology in CSE</h4>
+                <p>Chaudhary Devi Lal University, Sirsa Haryana</p>
+              </article>
+              <article class="timeline-item">
+                <span class="timeline-year">2019 - 2020</span>
+                <h4>Class 12th (PCM with CS)</h4>
+                <p>Vaish Model Senior Secondary School, Bhiwani Haryana</p>
+              </article>
+              <article class="timeline-item">
+                <span class="timeline-year">2017 - 2018</span>
+                <h4>Class 10th</h4>
+                <p>Vaish Model Senior Secondary School, Bhiwani Haryana</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="content-panel" id="projects" data-title="MISSION ARCHIVE" aria-hidden="true">
+            <div class="section-heading">
+              <p>FILE 05 // MISSION ARCHIVE</p>
+              <h3>PROJECTS</h3>
+            </div>
+
+            <div class="project-grid">
+              <article class="project-card">
+                <div class="project-code">MISSION 01</div>
+                <div class="project-preview project-preview--food">
+                  <span>FOOD DELIVERY SYSTEM</span>
+                </div>
+                <div class="project-body">
+                  <div class="project-title-row">
+                    <h4>FoodDash</h4>
+                    <span class="live-indicator">LIVE</span>
+                  </div>
+                  <p>A MERN food delivery app with authentication, menu browsing, cart, checkout, orders, and role-based user flows.</p>
+                  <div class="tech-tags"><span>React</span><span>Node</span><span>Express</span><span>MongoDB</span><span>Socket.io</span><span>JWT</span></div>
+                  <div class="project-actions">
+                    <a href="https://fooddash-iglg.onrender.com" target="_blank" rel="noreferrer">OPEN DEPLOYMENT</a>
+                    <a href="https://github.com/Sumit70510/FoodDash.git" target="_blank" rel="noreferrer">SOURCE</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-code">MISSION 02</div>
+                <div class="project-preview project-preview--social">
+                  <span>REAL-TIME SOCIAL PLATFORM</span>
+                </div>
+                <div class="project-body">
+                  <div class="project-title-row">
+                    <h4>InstaGram</h4>
+                    <span class="live-indicator">LIVE</span>
+                  </div>
+                  <p>A MERN social platform with authentication, posts, likes, comments, follow/unfollow, real-time chat, and Cloudinary media uploads.</p>
+                  <div class="tech-tags"><span>React</span><span>Node</span><span>MongoDB</span><span>Socket.io</span><span>Cloudinary</span></div>
+                  <div class="project-actions">
+                    <a href="https://instagram-ajpd.onrender.com" target="_blank" rel="noreferrer">OPEN DEPLOYMENT</a>
+                    <a href="https://github.com/Sumit70510/Instagram.git" target="_blank" rel="noreferrer">SOURCE</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-code">MISSION 03</div>
+                <div class="project-preview project-preview--ott">
+                  <span>OTT DISCOVERY PLATFORM</span>
+                </div>
+                <div class="project-body">
+                  <div class="project-title-row">
+                    <h4>NetflixGo</h4>
+                    <span class="live-indicator">LIVE</span>
+                  </div>
+                  <p>A full-stack OTT-style app using TMDB API with authentication, movie search, watch history, protected routes, and trailer playback.</p>
+                  <div class="tech-tags"><span>React</span><span>Node</span><span>Express</span><span>MongoDB</span><span>TMDB API</span></div>
+                  <div class="project-actions">
+                    <a href="https://netflixgo-2dtg.onrender.com" target="_blank" rel="noreferrer">OPEN DEPLOYMENT</a>
+                    <a href="https://github.com/Sumit70510/NetflixGo.git" target="_blank" rel="noreferrer">SOURCE</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <footer class="hud-footer" aria-hidden="true">
+          <span>PORTFOLIO // SECURE TERMINAL</span>
+          <span>SELECT FILE TO LOAD DATA</span>
+          <span>STATUS: READY</span>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
