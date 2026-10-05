@@ -12,7 +12,8 @@ body{
    background-color: #1e1e1e;
    font-family: sans-serif;
    color : #a0a0a0;
-   line-height: 1.6;  
+   line-height: 1.6;
+   overflow-x: hidden;
 }
 
 .main-container{
@@ -196,6 +197,7 @@ nav a:hover{
 
 #about,
 #skills,
+#experience,
 #education,
 #portfolio{
     scroll-margin-top : 100px;
@@ -434,6 +436,7 @@ nav a:hover{
 
     #about,
     #skills,
+    #experience,
     #education,
     #portfolio{
         scroll-margin-top : 100px;
@@ -548,7 +551,9 @@ nav a:hover{
         position : sticky;
         top : 0;
         z-index : 100;
+        width : 100%;
         overflow-x : auto;
+        overflow-y : hidden;
         padding : 12px;
         margin-bottom : 0;
         background-color : #252525;
@@ -556,12 +561,9 @@ nav a:hover{
         border-radius : 14px;
         border-bottom-left-radius : 0;
         border-bottom-right-radius : 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         scrollbar-width : none;
         -ms-overflow-style : none;
-         overflow-x : hidden;
+        -webkit-overflow-scrolling : touch;
     }
 
     #navigation::-webkit-scrollbar{
@@ -569,10 +571,11 @@ nav a:hover{
     }
 
     #navigation nav{
-        justify-content : space-evenly;
+        justify-content : flex-start;
         align-items: center;
         flex-wrap : nowrap;
-        min-width : max-content;
+        width : max-content;
+        min-width : 100%;
         gap : 8px;
     }
 
@@ -583,6 +586,7 @@ nav a:hover{
         padding : 7px 12px;
         border-radius : 20px;
         font-size : 0.75rem;
+        flex : 0 0 auto;
     }
 
     #navigation nav a.active{
@@ -598,6 +602,7 @@ nav a:hover{
 
     #about,
     #skills,
+    #experience,
     #education,
     #portfolio{
         background-color : #2a2a2a;
@@ -768,6 +773,7 @@ nav a:hover{
 
     #about,
     #skills,
+    #experience,
     #education,
     #portfolio{
         padding : 15px;
